@@ -4,9 +4,7 @@
 <% end %>
 </p>
 
-<p class="lead">
-	<%= @post.title %>
-</p>
+<%= render "shared/content_title", title: @post.title %>
 
 <p>
 	<%= @post.description %>
