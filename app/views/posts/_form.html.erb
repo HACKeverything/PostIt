@@ -16,4 +16,9 @@
 		</div>
 		<%= f.submit(@post.new_record? ? "Create Post" : "Update Post", class: "btn btn-primary") %>
 	<% end %>
+	<div class="controller-group">
+		<%= @categories.each do |category| %>
+			<%= category.name %>
+		<% end %>
+	</div>
 </div>
