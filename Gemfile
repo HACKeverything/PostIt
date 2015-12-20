@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'awesome_rails_console'
 
+gem 'bcrypt-ruby', '~> 3.0.0'
+
 group :doc do
   gem 'sdoc', require: false
 end
