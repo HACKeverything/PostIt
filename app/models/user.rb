@@ -10,7 +10,11 @@ class User < ActiveRecord::Base
 
   before_save :generate_slug
 
+  def to_param
+    self.slug
+  end
+
   def generate_slug
-    self.slug = self.uesrname.gsub(" ", "-").downcase
+    self.slug = self.username.gsub(" ", "-").downcase
   end
 end
